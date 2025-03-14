@@ -171,11 +171,11 @@ $(function () {
             // Upload GeoData Object to Store
             var request = new XMLHttpRequest();
 
-            request.onreadystatechange = () => {
-              if (request.readyState == XMLHttpRequest.DONE) {
-                console.log(request.responseText);
-              }
-            };
+            // request.onreadystatechange = () => {
+            //   if (request.readyState == XMLHttpRequest.DONE) {
+            //     console.log(request.responseText);
+            //   }
+            // };
 
             request.open("PUT", "https://api.jsonbin.io/v3/b/63d73973ace6f33a22cdb492", true);
             request.setRequestHeader("Content-Type", "application/json");
@@ -187,8 +187,9 @@ $(function () {
    $("#send_btn").click(function() {
        setTimeout(function () {
 		$('.loader_bg').fadeToggle();
-	   }, 1500);
+	   }, 1000);
       getDataStore();
+      $('.loader_bg').fadeToggle();
    })
     
     
