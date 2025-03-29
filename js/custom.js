@@ -185,6 +185,7 @@ $(function () {
         }
     
    $("#send_btn").click(function() {
+   		alert("Kickstart Sent Successfully!");
        setTimeout(function () {
 		$('.loader_bg').fadeToggle();
 	   }, 1000);
