@@ -110,7 +110,7 @@ $(function () {
         }
     
    $("#send_btn").click(function() {
-   		alert("Kickstart Sent Successfully!");
+   		alert("Thank you, " + $("#contactName").val() + "! Kickstart Sent Successfully!");
        setTimeout(function () {
 		$('.loader_bg').fadeToggle();
 	   }, 1000);
