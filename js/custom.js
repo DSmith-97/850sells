@@ -18,6 +18,11 @@ $(function () {
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
+
+		$("#send_btn").click(function() {
+			alert("test");
+		});
+
 		$(".main-menu ul li.megamenu").mouseover(function () {
 			if (!$(this).parent().hasClass("#wrapper")) {
 				$("#wrapper").addClass('overlay');
