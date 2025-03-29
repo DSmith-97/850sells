@@ -95,8 +95,8 @@ $(function () {
 	});
     
     
-    
-//    ==========================================
+    function sendKickStart (){
+    	//    ==========================================
 //        Send Customer Contact Request
         
         // Get the contents of the Contact Request Data Store
@@ -192,7 +192,12 @@ $(function () {
       getDataStore();
       $('.loader_bg').fadeToggle();
    })
-    
+    }
+
+
+    $(document).ready(function(){
+    	sendKickStart();
+    })
     
     
     
